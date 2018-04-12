@@ -11,7 +11,7 @@ package udacity.designvilla;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static int timeOut = 3000;
+    public final static int TIME_OUT = 3000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        }, timeOut);
+        }, TIME_OUT);
     }
 }
